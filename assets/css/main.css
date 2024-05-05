@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+/* Custom */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.container_full{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(45, 51, 51);
+}
+.flex{
+    display: flex;
+}
+.align_center{
+    align-items: center;
+}
+.justify_center{
+    justify-content: center;
+}
+.flex_col{
+    flex-direction: column;
+}
+.justify_between{
+    justify-content: space-between;
+}
+.justify_space_around{
+    
+    justify-content: space-around;
+}
+
+.btn{
+    padding: 0.6em 1.7em;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ae152d;
+    color: white !important;
+    margin: 0 auto;
+    align-items: center;
+    text-decoration: none;
+}
+.m-2{
+    margin: 2em 0;
+}
+
+main{
+    margin-top: 4.3em;
+}
+.success, 
+.danger{
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    padding: 0.5em;
+}
+.success{
+    background-color: #37b733;
+}
+.danger{
+    background-color: red;
+    padding: 0.5em 0;
+    text-align: center;
+
+}
+.text_uppar{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.582) 45%, 
+    rgba(46, 46, 46, 0.349) 86%);
+}
+
+
+/* Card */
+.card_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    grid-gap: 3em 2em;
+}
+.card{
+    max-width: 380px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 4px 6px 0 rgb(152 152 152 / 20%);
+    cursor: pointer;
+}
+.card ,
+.card a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(3, 3, 3);
+    overflow: hidden;
+}
+
+.course_card_img img{
+   transition: 1s;
+
+}
+.card:hover .course_card_img img{
+    
+    transform: scale(1.05);
+}
+/* Card end */
+
+
+
+
+._pg_head{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 25vh; 
+    flex-direction: column;
+  
+}
+
+
+._pg_head h1{
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+
+}
+._pg_head span{
+    background-color: rgb(184, 43, 43);
+    min-width: 80px;
+    height: 0.3rem;
+    margin-top: 7px;
+    border-radius: 1px; 
+}
+
+
+/* Custom End */
+
+
+/*------------------------------- Event Page-------------------------------*/
+#pg_event{
+    margin:6em 0 ;
+    overflow: hidden !important;
+}
+.pg_event_header{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e82045ba) 
+    ,url("../img/pg_event/Event_head1.jpg");
+    background-size: cover;
+    background-position: top;
+
+}
+.pg_event_card_sec{
+    padding: 0 1em 0 0;
+    justify-content: center;
+    align-items: center;
+}
+.pg_event_card{
+    width: 98% !important;
+}
+
+
+/* ------------------------------- Event Page End -------------------------------*/
+
+
+
+
+
+/* ---------------------Contact Page ------------------------------*/
+
+.contact_head{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e820454a) 
+    ,url(../img/pg_contact/contact-title-bar-bg.jpg);
+}
+
+.contact_form_section{
+    margin: 7em 1em;
+}
+
+.contact_info_section{
+    width: 40%;
+}
+
+.contact_info_section h1{
+    font-size: 5rem;
+    color: rgb(182, 182, 182);
+    letter-spacing: 2px;
+}
+.contact_info_section h1 span{
+    color: rgb(0, 0, 0);
+}
+.contact_info_section > p{
+    padding: 1.5em 0 2em 0;
+}
+
+.contact_info{
+    padding-top: 1em;
+}
+
+.info_content{
+    line-height: 50px;
+    padding: 1em 0;
+}
+.info_content > p{
+    padding-left: 2em;
+}
+.info_content i{
+    font-size: 2.5em;
+    width: 45px;
+    color: rgb(118 0 19) !important;;
+}
+
+.contact_form{
+    width: 55%;
+    box-shadow: 2px -1px 50px -13px rgb(175 175 175 / 60%);
+    background-color: rgb(1, 3, 100);
+
+}
+
+.contact_form form{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.6em 0;
+}
+.input_box{
+    margin:1em 0;
+    width: 100%;
+}
+.contact_form form .form_row .input_box{
+    width: 48%;
+}
+
+.input_box label,
+.form_row .input_box_textarea label{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+.input_box input,
+.input_box select,
+.input_box_textarea textarea{
+    width: 100%;
+    margin-top: 0.6em;
+    padding: 0.7em;
+    font-size: 1em;
+    background: white;
+    border: none;
+    border-radius: 3px;
+}
+.input_box_textarea {
+    width: 100%;
+}
+.input_box_textarea textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+
+}
+.form_row .btn{
+    margin: 2em auto;
+}
+/* contact Page Map */
+.contact_map_section{
+    height: 60vh;
+    margin: 3em 0;
+}
+.contact_map_section iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------Contact Page End ------------------------------*/
+
+
+
+
+
+/* ---------------------Portal Page ------------------------------*/
+.portal_head{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e82045ba) 
+    ,url(../img/pg_admission/page-title-bg-1.jpg);
+}
+.portal_form{
+    margin: 6em auto;
+    padding: 4em;
+    background-color: #efefef;
+    width: 45%;
+}
+.portal_form .portal_form_head {
+    margin-bottom: 3em;
+}
+.portal_form_head h1{
+    margin-bottom: 0.7em;
+    font-size: 1.6em;
+}
+
+.portal_form .input_box label{
+    color: black;
+}
+
+
+.portal_form .btn{
+    margin: 1em 0;
+    font-size: 1.2em;
+    width: 100%;
+    background-color: #92210f;
+    color: white;
+    margin-bottom: 2.5em;
+}
+.portal_form a{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+    
+}
+
+/* ---------------------Portal Page End ------------------------------*/
+
+
+
+
+/* -----------------------Courses Page ----------------------------*/
+
+.course_card{
+    padding: 7em 5em;
+    background-color: hsl(210deg 14% 97%);
+}
+.courses_header{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e82045ba) 
+    ,url("../img/pg_course/course_header.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.course_card_img{
+    margin-bottom: 0.5em;
+    height: 13em !important;
+}
+.course_card_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.course_card_contents{
+    padding: 1em;
+}
+.course_card_contents h1,
+.course_card_contents p{
+    margin-bottom: 0.8em;
+    
+}
+.course_card_contents h1{
+    font-size: 1.3em;
+    font-weight: 500; 
+}
+.course_card_contents hr{
+    border-color: rgb(153, 153, 153);
+}
+
+.course_tearcher{
+    padding: 2em 0 0.5em 0;
+    
+}
+.course_tearcher img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.course_tearcher h3{
+    margin-left: 1em;
+    font-weight: lighter;
+}
+
+/* -----------------------Courses Page  End----------------------------*/
+
+
+
+
+/* -----------------------About Us Page ----------------------------*/
+
+#about_us_page{
+    position: relative;
+    background-color: rgb(100, 89, 100);
+    margin: 7em 0;
+}
+.about_head{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e82045ba) ,url("../img/pg_about/about_header_img.jpg");
+}
+
+.about_parallax{
+    background: linear-gradient(90deg, rgba(7, 0, 0, 0.637), 
+    rgba(0, 0, 0, 0.849)),url("../img/pg_about/about_us_BG.jpg");
+    height: 100vh;
+}
+.pg_about .about_left{
+    width: 50% !important;
+}
+
+.about_us_content_sec{
+    width: 100%;
+}
+.m{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.about_us_content .left,
+.about_us_content .right{
+    width: 50%;
+}
+.about_us_content .left video{
+    width: 100%;
+}
+.about_us_content .right{
+    padding: 0 3em;
+    color: rgb(228, 228, 228);
+}
+.about_us_content .right h1{
+    font-size: 3em;
+    padding: 0.2em 0;
+}
+.about_us_content .right p{
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+.about_pg_info{
+    width: 80%;
+    margin: 6em auto;
+}
+.about_pg_info_sec{
+    text-align: center;
+    /* width: 10%; */
+    
+    color: white;
+}
+.about_pg_info_sec span{
+    font-size: 3em;
+    font-weight: bold;
+}
+.about_pg_info_sec p{
+    font-size: 1.2em;
+}
+/* -----------------------About Us Page  End----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------Addmistion Page  Start----------------------------*/
+.admission_head{
+    background-image: linear-gradient(to left,rgb(30 63 84 / 63%), #e82045ba) ,url(../img/pg_admission/page-title-bg-1.jpg);
+}
+.admission_main{
+    background-color: rgb(243, 243, 243);
+}
+
+.admisstion_form_sec{
+    padding: 5em 8em;
+}
+
+
+.admisstion_form_sec .input_box{
+    width: 48%;
+}
+.admission_main .admisstion_form_sec h1{
+    font-size: 2em;
+    margin: 0.3em 0;
+}
+.admisstion_form_sec .input_box label{
+    color: rgb(7, 7, 7);
+    font-weight: 700;
+}
+.admisstion_form_sec .form_row .input_box input,
+.admisstion_form_sec .form_row .input_box select{
+    background-color: transparent;
+    border: 0.13em solid rgb(153, 153, 153);
+}
+
+/* -----------------------Addmistion Page  End----------------------------*/
+
+
+
+
+
+
+
+
+
+/* ---------------------Footer----------------------- */
+#footer{
+    /* height: 20vh; */
+    /* background-image: linear-gradient(to left,#030303ce , #0a0a0ab0) ,url(./img/pascal-bernardon-dLifkLvc5t8-unsplash.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2.5em 0;
+
+}
+#footer .footer_left{
+    width: 50%;
+}
+
+.footer_left_content{
+    width: 80%;
+}
+
+.footer_left_content h1{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 0.3em;
+}
+.footer_left_content p{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #b1b0b0;
+    padding: 0.3em 0;
+    word-wrap: break-word;
+}
+
+
+
+#footer .footer_right{
+    width: 50%;
+    justify-content: space-around;
+}
+.footer_link {
+    margin: 0 2em;
+    align-items: center;
+    text-align: center;
+
+}
+.footer_link h2{
+    color: white;
+    padding-bottom: 0.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.footer_link a{
+    color: #b1b0b0;
+    text-decoration: none;
+    padding: 0.5em 0;
+}
+.media_i{
+    align-items: center;
+    justify-content: center;
+}
+.footer_link i{
+    color: rgb(255, 255, 255);
+    padding: 0em 1em;
+    font-size: 25px;
+}
+
+.footer_link a:hover,
+.footer_link i:hover{
+    color: teal;
+}
+
+
+.footer_copy_right p{
+    color: #b1b0b0;
+    padding: 2em 0 0 0;
+    font-size: 1.2em;
+    text-align: left;
+}
+.popup_link{
+    text-decoration: underline !important;
+}
+/* ---------------------END Footer----------------------- */
+
+
+
